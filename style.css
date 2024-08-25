@@ -1,0 +1,13 @@
+body {
+  display: flex;
+}
+
+.picture {
+  height: 100vh;
+}
+
+.content {
+  width: 67%;
+  margin: 32px;
+  padding-top: 16px;
+}
