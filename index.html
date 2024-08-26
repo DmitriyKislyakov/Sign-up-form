@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
-  <body>
+  <body link="#596d48">
     <div class="picture">
       <img
         src="images/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg"
@@ -25,7 +25,73 @@
         </p>
         <p>You <i>know</i> you want to.</p>
       </div>
-      <div class="form">Let's do this!</div>
+      <div class="forms">
+        Let's do this!
+        <form action="#" method="post">
+          <div class="name">
+            <div class="form">
+              <legend>*FIRST NAME</legend>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
+            <div class="form">
+              <legend>*LAST NAME</legend>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
+          </div>
+          <div class="contact">
+            <div class="form">
+              <legend>*EMAIL</legend>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form">
+              <legend>*PHONE NUMBER</legend>
+              <input
+                type="number"
+                id="phone_number"
+                name="phone_number"
+                required
+                minlength="5"
+              />
+            </div>
+          </div>
+          <div class="password">
+            <div class="form">
+              <legend for="password">*PASSWORD</legend>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="8"
+              />
+            </div>
+            <div class="form">
+              <legend for="confirm_password">*CONFIRM PASSWORD</legend>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                required
+                minlength="8"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
       <div class="footer">
         <button type="submit">Create account</button>
         <p>Alredy have an account? <a href="">Log in</a></p>
