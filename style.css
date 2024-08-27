@@ -12,9 +12,42 @@ body {
 
 .picture {
   height: 100vh;
+  width: 34%;
   flex-basis: auto;
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  background: url(images/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.picture p {
+  color: whitesmoke;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: max-content;
+}
+
+.odinText {
+  color: white;
+  font-family: 'Norse-Bold';
+  font-size: 8rem;
+}
+
+.odinLogo img {
+  height: 200px;
+  width: auto;
 }
 
 .content {
@@ -77,4 +110,9 @@ button {
   background-color: #596d48;
   padding: 8px 16px;
   border-radius: 10px;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(fonts/Norse-Bold.otf);
 }
